@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday KitKat ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===================================== -->
+<!-- Animated Background -->
+<!-- ===================================== -->
+
+<div id="background">
+
+    <div id="stars"></div>
+
+    <div id="shootingStars"></div>
+
+    <div id="floatingHearts"></div>
+
+    <div id="balloonsContainer"></div>
+
+    <div id="confettiContainer"></div>
+
+    <div id="musicParticles"></div>
+
+</div>
+
+
+
+<!-- ===================================== -->
+<!-- Music Button -->
+<!-- ===================================== -->
+
+<button id="musicToggle" class="musicButton">
+
+🎵
+
+</button>
+
+<!-- ===================================== -->
+<!-- Scene 1 : Loading -->
+<!-- ===================================== -->
+
+<section id="loadingPage" class="scene active">
+
+    <div class="loadingHeart">
+
+        ❤️
+
+    </div>
+
+    <h1>
+
+        Preparing Something Magical...
+
+    </h1>
+
+    <div class="loadingBar">
+
+        <div id="loadingProgress"></div>
+
+    </div>
+
+    <p>
+
+        Just a few more seconds...
+
+    </p>
+
+</section>
+
+<!-- ===================================== -->
+<!-- Scene 2 : Password -->
+<!-- ===================================== -->
+
+<section id="passwordPage" class="scene">
+
+<div class="passwordContainer">
+
+<div class="glassLockCard">
+
+<h2>
+
+Enter Your Secret Passcode
+
+</h2>
+
+<p>
+
+Only KitKat knows this date ❤️
+
+</p>
+
+<!-- Password Dots -->
+
+<div class="passwordDots">
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</div>
+
+<input
+type="password"
+id="passwordInput"
+maxlength="4"
+hidden>
+
+<!-- Keypad -->
+
+<div class="keypad">
+
+<button>1</button>
+
+<button>2</button>
+
+<button>3</button>
+
+<button>4</button>
+
+<button>5</button>
+
+<button>6</button>
+
+<button>7</button>
+
+<button>8</button>
+
+<button>9</button>
+
+<button id="backspaceBtn">
+
+⌫
+
+</button>
+
+<button>0</button>
+
+<button>#</button>
+
+</div>
+
+<button
+id="unlockBtn"
+class="unlock">
+
+UNLOCK ❤️
+
+</button>
+
+<p id="passwordError"></p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- PART 1 ENDS HERE -->
+<!-- Next : Envelope + Welcome + Cake -->
+<!-- ===================================== -->
+ <!-- ===================================== -->
+<!-- Scene 3 : Love Letter Envelope -->
+<!-- ===================================== -->
+
+<section id="envelopePage" class="scene">
+
+    <div class="envelopeContainer">
+
+        <h1 class="sceneTitle">
+            A Letter For You 💌
+        </h1>
+
+        <p class="sceneSubtitle">
+            Someone spent a lot of time making this...
+        </p>
+
+        <div id="envelope">
+
+            <div class="envelopeShadow"></div>
+
+            <div class="envelopeBack"></div>
+
+            <div class="envelopeLetter">
+
+                <div class="letterPreview">
+
+                    ❤️
+
+                </div>
+
+            </div>
+
+            <div class="envelopeFront"></div>
+
+            <div class="envelopeFlap"></div>
+
+        </div>
+
+        <button id="openLetter">
+
+            Open My Letter ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================== -->
+<!-- Scene 4 : Welcome -->
+<!-- ===================================== -->
+
+<section id="welcomePage" class="scene">
+
+    <video id="welcomeVideo" muted playsinline preload="auto">
+        <source src="videos/video2.mp4" type="video/mp4">
+    </video>
+   
+
+    <div id="welcomeContent" class="welcomeContent">
+
+        <span class="welcomeSmall">
+
+            For The Most Amazing Girl...
+
+        </span>
+
+        <h1 class="birthdayTitle">
+
+            Happy Birthday
+
+        </h1>
+
+        <h2 id="birthdayName">
+
+            Tannushi ❤️
+
+        </h2>
+
+        <h3>
+
+            My KitKat 🍫❤️
+
+        </h3>
+
+        <p class="welcomeMessage">
+
+            Today isn't just another day...
+            <br><br>
+
+            It's the day someone incredibly special
+            came into this world.
+
+            <br><br>
+
+            I made this little surprise only for you.
+
+        </p>
+
+        <button id="startJourney">
+
+            Begin Our Journey ✨
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================== -->
+<!-- Scene 5 : Birthday Cake -->
+<!-- ===================================== -->
+
+<section id="cakePage" class="scene">
+
+     <video id="cakeVideo" autoplay muted loop playsinline>
+        <source src="videos/video3.mp4" type="video/mp4">
+    </video>
+    <h1 class="cakeTitle">
+
+        Make A Wish 🎂
+
+    </h1>
+
+    <p class="cakeSubtitle">
+
+        Blow into the microphone
+        to blow out the candle.
+
+    </p>
+
+    <div id="cakeArea">
+
+        <!-- Plate -->
+
+        <div class="plate"></div>
+
+        <!-- Cake -->
+
+        <div class="cakeBottom"></div>
+
+        <div class="cakeMiddle"></div>
+
+        <div class="cakeTop"></div>
+
+        <!-- Cream -->
+
+        <div class="icing"></div>
+
+        <div class="icingDrip drip1"></div>
+
+        <div class="icingDrip drip2"></div>
+
+        <div class="icingDrip drip3"></div>
+
+        <!-- Decorations -->
+
+        <div class="cakeCherry cherry1"></div>
+
+        <div class="cakeCherry cherry2"></div>
+
+        <div class="cakeCherry cherry3"></div>
+
+        <div class="cakeCherry cherry4"></div>
+
+        <div class="cakeCherry cherry5"></div>
+
+        <!-- Candle -->
+
+        <div class="candle">
+
+            <div class="wick"></div>
+
+            <div id="flame"></div>
+
+            <div id="smoke"></div>
+
+        </div>
+
+    </div>
+
+    <button id="micButton">
+
+        🎤 Start Microphone
+
+    </button>
+
+    <p id="wishText"></p>
+
+</section>
+
+<!-- ===================================== -->
+<!-- END OF PART 2 -->
+<!-- Celebration + Gallery in Part 3 -->
+<!-- ===================================== -->
+ <!-- ===================================== -->
+<!-- Scene 6 : Celebration -->
+<!-- ===================================== -->
+
+<section id="celebrationPage" class="scene">
+
+    <video id="celebrationVideo" autoplay muted loop playsinline>
+    <source src="videos/video4.mp4" type="video/mp4">
+</video>
+    <div class="celebrationOverlay"></div>
+
+    <div class="celebrationContent">
+
+        <h1 class="celebrate">
+
+            🎉 Happy Birthday 🎉
+
+        </h1>
+
+        <h2>
+
+            My KitKat ❤️
+
+        </h2>
+
+        <p>
+
+            May all your dreams come true,
+            and may your smile never fade.
+
+        </p>
+
+        <button id="galleryButton">
+
+            Continue ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================== -->
+<!-- Scene 7 : Memory Gallery -->
+<!-- ===================================== -->
+
+<section id="galleryPage" class="scene">
+
+    <h1 class="galleryTitle">
+
+        Our Beautiful Memories 📸
+
+    </h1>
+
+    <p class="gallerySubtitle">
+
+        Every picture has a story...
+
+    </p>
+
+    <div id="galleryGrid">
+
+        <div class="photo">
+            <img src="images/kitkat4.jpeg" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="images/kitkat8.jpeg" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="images/kitkat5.jpeg" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="images/kitkat7.jpeg" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="images/kitkat9.jpeg" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="images/kitkat6.jpeg" alt="">
+        </div>
+
+    </div>
+
+    <button id="letterButton">
+
+        Read My Letter 💌
+
+    </button>
+
+</section>
+
+
+
+<!-- ===================================== -->
+<!-- Scene 8 : Birthday Letter -->
+<!-- ===================================== -->
+
+<section id="letterPage" class="scene">
+<canvas id="fireworksCanvas"></canvas>
+    <div class="letterPaper">
+
+        <div class="paperTop">
+
+            ❤️
+
+        </div>
+
+        <h1>
+
+            Dear KitKat ❤️
+
+        </h1>
+
+        <div id="letterText">
+
+            <!-- Script.js will type the message here -->
+
+        </div>
+
+        <button id="giftButton">
+
+            One Last Surprise 🎁
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ===================================== -->
+<!-- END OF PART 3 -->
+<!-- Gift + Final Scene in Part 4 -->
+<!-- ===================================== -->
+ <!-- ===================================== -->
+<!-- Scene 9 : Gift -->
+<!-- ===================================== -->
+
+<!-- ==========================
+        GIFT PAGE
+=========================== -->
+
+<section id="giftPage" class="scene">
+
+    <div class="giftContainer">
+
+        <h1 class="giftTitle">
+            One Last Surprise 🎁
+        </h1>
+
+        <p class="giftSubtitle">
+            Tap the gift to open it...
+        </p>
+
+        <div id="giftBox">
+
+            <div class="giftLid"></div>
+
+            <div class="giftBody"></div>
+
+            <div class="giftRibbonVertical"></div>
+
+            <div class="giftRibbonHorizontal"></div>
+
+            <div class="giftBow">
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================== -->
+<!-- Scene 10 : Final Page -->
+<!-- ===================================== -->
+
+<section id="finalPage" class="scene">
+
+    <video id="finalVideo" autoplay muted loop playsinline>
+        <source src="videos/video5.mp4" type="video/mp4">
+    </video>
+
+    <div class="finalBackground">
+
+        <div class="moon"></div>
+
+        <div class="starsLayer"></div>
+
+        <div class="floatingLights"></div>
+
+    </div>
+
+    <div class="finalCard">
+
+        <span class="finalSmall">
+
+            Made Especially For You ❤️
+
+        </span>
+
+        <h1>
+
+            Happy Birthday
+
+        </h1>
+
+        <h2>
+
+            My KitKat ❤️
+
+        </h2>
+
+        <div class="finalDivider"></div>
+
+        <p class="finalMessage">
+
+            I'm not a perfect person in your life...
+            But I promise I'll be there to annoy you,
+            make you laugh,
+            and love you...
+            Forever.❤️
+            <br><br>
+            <span class="forever">
+
+                Happy Birthday Once Again ❤️
+
+            </span>
+
+        </p>
+
+        <p class="promiseMessage">
+
+            I will keep always in my
+            favourate incomplete wish.🙂
+        </p>
+        <div class="signature">
+
+            — With Love,
+
+            <strong>Akarsh ❤️</strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================== -->
+<!-- Audio -->
+<!-- ===================================== -->
+
+<audio id="bgMusic" loop>
+
+    <source
+        src="music/perfect.mp3"
+        type="audio/mpeg">
+
+</audio>
+
+
+
+<!-- ===================================== -->
+<!-- JavaScript -->
+<!-- ===================================== -->
+
+<script src="config.js"></script>
+
+<script src="animations.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
